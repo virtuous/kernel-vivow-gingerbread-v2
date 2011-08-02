@@ -1004,7 +1004,7 @@ config MSM_DALRPC_TEST
 	  Exercises DAL RPC calls to QDSP6.
 
 config MSM_CPU_FREQ_SCREEN
-	bool
+	bool "MSM_CPU_FREQ_SCREEN"
 	default n
 	depends on HAS_EARLYSUSPEND
 	help
