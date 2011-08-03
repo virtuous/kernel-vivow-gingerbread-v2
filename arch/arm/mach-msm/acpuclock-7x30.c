@@ -88,9 +88,6 @@ static struct cpufreq_frequency_table freq_table[] = {
                 { 5, 806400 },
                 { 6, 902400 },
                 { 7, 998400 },
-#ifndef CONFIG_VIRTUOUS_OVERCLOCK
-                { 8, CPUFREQ_TABLE_END },
-#else
                 { 8, 1094400 },
                 { 9, 1152000 },
                 { 10, 1209600 },
@@ -99,7 +96,6 @@ static struct cpufreq_frequency_table freq_table[] = {
                 { 13, 1497600 },
                 { 14, 1516800 },
                 { 15, CPUFREQ_TABLE_END },
-#endif
 };
 
 /* Use negative numbers for sources that can't be enabled/disabled */
